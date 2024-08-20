@@ -1,0 +1,28 @@
+.student-dashboard {
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .content {
+      width: 100%;
+    }
+  }
+  

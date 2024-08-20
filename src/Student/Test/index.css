@@ -1,0 +1,69 @@
+.enter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto; /* Center the element horizontally */
+    padding: 20px;
+    margin-left: 400px;
+    width: 100%;
+    max-width: 400px; /* Maximum width for larger screens */
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .enter input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .enter button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .enter button:hover {
+    background-color: #45a049;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .enter {
+      /* Adjust top margin for smaller screens */
+      max-width: 130%;
+      margin-left: -90px; /* Take more width on smaller screens */
+    }
+  
+    .enter input[type="text"], .enter button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .enter {
+      margin: 30px auto; /* Further reduce top margin for very small screens */
+      padding: 15px; /* Adjust padding for smaller screens */
+      max-width: 100%; /* Use full width on very small screens */
+    }
+  
+    .enter input[type="text"], .enter button {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  }
+  

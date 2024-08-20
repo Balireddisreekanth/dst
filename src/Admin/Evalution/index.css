@@ -1,0 +1,134 @@
+.container {
+  margin-left: 320px;
+}
+
+@media screen and (max-width: 1440px) {
+  .filters {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 370px;
+    margin-right: 10px;
+  }
+  .container {
+    margin-left: 330px;
+  }
+  .table {
+    margin-left: 320px;
+  }
+
+  .filters input {
+    font-size: 0.95em;
+  }
+  .approve-all-btn {
+    margin-left: 430px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .filters {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 10px;
+  }
+  .container {
+    margin-left: 250px;
+  }
+  .table {
+    margin-left: 250px;
+    width: 90%;
+  }
+
+  .filters input {
+    font-size: 0.95em;
+  }
+  .approve-all-btn {
+    margin-left: 250px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filters {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .table {
+    margin-left: 10px;
+    width: 90%;
+  }
+  .approve-all-btn {
+    margin-left: 80px;
+    width: 70%;
+  }
+
+  .filters input {
+    font-size: 0.95em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .table {
+    margin-left: 0;
+    width: 100%;
+  }
+  .approve-all-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .filters input {
+    font-size: 0.85em;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .table {
+    margin-left: 0;
+    width: 100%;
+  }
+  .approve-all-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .filters input {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+}

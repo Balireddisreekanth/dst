@@ -1,0 +1,161 @@
+.sidebar {
+  background-color: #f4f4f4;
+  width: 190px;
+  height: 100vh;
+  
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+ 
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.sidebar nav ul li a.active-link {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.sidebar .click {
+  margin-top: auto; 
+}
+
+.sidebar .click button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 180px;
+  transition: background-color 0.3s;
+}
+
+.sidebar .click button:hover {
+  background-color: #c82333;
+}
+
+/* Main Content Styling */
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+/* Laptop View (1024px and below) */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 190px;
+  }
+
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+  .sidebar {
+    /* width: 180px; */
+    height: auto;
+    padding: 10px;
+    box-shadow: none;
+    position: static;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar nav ul li {
+    margin: 5px 0;
+  }
+}
+
+/* Mobile View (425px and below) */
+@media (max-width: 425px) {
+  .sidebar {
+    /* overflow-y: auto;
+  position: fixed; */
+    /* width: 100%; */
+    margin-top: -20px;
+    padding: 10px 5px;
+    box-shadow: none;
+    position: static;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 11px;
+    padding: 8px;
+    display: block;
+  }
+
+  .sidebar .click button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+}
+
+/* Small Mobile View (375px and below) */
+@media (max-width: 375px) {
+  .sidebar {
+    width: 90%;
+    margin-top: 10px;
+    /* padding: 10px; */
+    position: static;
+    box-shadow: none;
+    display: fixed;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 11px;
+    
+    display: fixed;
+    
+    /* padding: 6px; */
+    display: block;
+  }
+
+  .sidebar .click button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+}

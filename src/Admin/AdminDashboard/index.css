@@ -1,0 +1,214 @@
+.user-table-container {
+  padding: 20px;
+  margin: auto;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.user-table th, .user-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-table button:hover {
+  background-color: #c82333;
+}
+
+.filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+}
+
+/* 1440px Screen */
+@media (max-width: 1440px) {
+  .user-table-container {
+    padding: 15px;
+    margin-left: 300px;
+  }
+
+  .user-table th, .user-table td {
+    padding: 14px;
+  }
+
+  .user-table button {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+
+  .filter {
+    margin-left: -20px;
+  }
+
+  .filter input {
+    padding: 10px;
+  }
+}
+
+/* 1024px Screen */
+@media (max-width: 1024px) {
+  .user-table-container {
+    padding: 15px;
+    width: 730px;
+    margin-left: 270px;
+    margin-right: 10px;
+  }
+
+  .user-table th, .user-table td {
+    padding: 12px;
+  }
+
+  .filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .filter input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+}
+
+/* 768px Screen */
+@media (max-width: 768px) {
+  .user-table-container {
+    padding: 12px;
+    margin-left: -370px;
+  }
+
+  .user-table th, .user-table td {
+    padding: 10px;
+  }
+
+  .user-table td::before {
+    font-size: 14px;
+  }
+
+  .user-table button {
+    padding: 6px 12px;
+  }
+
+  .filter {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 170px;
+    margin-right: 10px;
+  }
+
+  .filter input {
+    padding: 8px;
+  }
+
+  .user-table {
+    margin-left: 22%;
+    width: 50%;
+  }
+}
+
+/* 425px Screen */
+@media (max-width: 425px) {
+  .user-table-container {
+    padding: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .user-table th, .user-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .user-table td::before {
+    font-size: 10px;
+  }
+
+  .user-table button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .filter {
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 90%;
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .filter input {
+    padding: 6px;
+    font-size: 12px;
+  }
+}
+
+/* 375px Screen */
+@media (max-width: 375px) {
+  .user-table-container {
+    padding: 8px;
+  }
+
+  .user-table th, .user-table td {
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  .user-table td::before {
+    font-size: 10px;
+  }
+
+  .user-table button {
+    padding: 3px 6px;
+    font-size: 11px;
+  }
+
+  .filter {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .filter input {
+    padding: 5px;
+    font-size: 11px;
+  }
+}

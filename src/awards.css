@@ -1,0 +1,89 @@
+.cash-awards-container{
+max-width: 800px;
+    
+    padding: 20px;
+    text-align: center;
+   
+    margin-left: 280px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.cash-awards-table{
+    border: 1px solid;
+    width: 90%;
+    margin-left: 55px;
+    margin-top: 30px;
+    text-align: center;
+
+}
+.cash-awards-table th, td{
+    border:1px solid;
+    text-align: center;
+}
+.cash-awards-table td{
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+    .cash-awards-table{
+        border: 1px solid;
+        width: 20%;
+        margin-left:-20pox;
+        display: flex;
+    display: table-row;
+        margin-top: 30px;
+        text-align: left;
+    
+    }
+    .cash-awards-table th, td{
+        border:1px solid;
+        display: flex;
+    text-align: left;
+    }
+    .cash-awards-table td{
+        text-align: left;
+    }
+    .cash-awards-container{
+        width: 96%;
+        margin-left: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+   
+  }
+  @media (max-width: 1024px) {
+    .cash-awards-container{
+        width: 96%;
+        margin-left: 120px;
+        margin-top: 20px;
+       
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cash-awards-table{
+        border: 1px solid;
+        width: 90%;
+        margin-left: 55px;
+        margin-top: 30px;
+        text-align: center;
+    
+    }
+    .cash-awards-table th, td{
+        border:1px solid;
+        text-align: left;
+    }
+    .cash-awards-table td{
+        text-align: center;
+    }
+    .cash-awards-container{
+        width: 96%;
+        margin-left: 10px;
+        margin-top: 20px;
+       
+    }
+   
+  }
+  

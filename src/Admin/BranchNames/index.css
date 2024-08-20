@@ -1,0 +1,204 @@
+.managerdss {
+  padding: 20px;
+  margin-left: 250px; 
+  transition: margin-left 0.3s ease;
+}
+
+.managerdss h1 {
+  margin-top: 0;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ReactModal__Content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.ReactModal__Content h2 {
+  margin-top: 0;
+}
+
+.ReactModal__Content button {
+  background-color: #28a745;
+  margin: 5px;
+}
+
+.ReactModal__Content button:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: right;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+/* 1440px Screen */
+@media (max-width: 1440px) {
+  .managerdss {
+    margin-left: 270px;
+  }
+}
+
+/* 1024px Screen */
+@media (max-width: 1024px) {
+  .managerdss {
+    margin-left: 250px;
+  }
+}
+
+/* 768px Screen */
+@media (max-width: 768px) {
+  .managerdss {
+    margin-left: 0;
+    margin-right: 180px; 
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filters {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
+  .ReactModal__Content {
+    width: 90%;
+  }
+}
+
+/* 425px Screen */
+@media (max-width: 425px) {
+  .managerdss {
+    padding: 10px;
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+
+  input[type="text"], input[type="email"], select {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  button {
+    font-size: 14px; 
+    padding: 8px 12px; 
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .ReactModal__Content {
+    width: 90%; 
+    padding: 15px; 
+  }
+
+  table {
+    font-size: 12px; 
+  }
+
+  th, td {
+    padding: 8px; 
+  }
+
+  thead {
+    font-size: 14px; 
+  }
+}
+
+/* 375px Screen */
+@media (max-width: 375px) {
+  .managerdss {
+    padding: 5px; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+
+  input[type="text"], input[type="email"], select {
+    font-size: 12px; 
+    padding: 6px; 
+  }
+
+  button {
+    font-size: 12px; 
+    padding: 6px 10px; 
+    width: 100%; 
+    margin-right: 0;
+  }
+
+  .ReactModal__Content {
+    width: 90%;
+    padding: 10px; 
+  }
+
+  table {
+    font-size: 10px; 
+  
+  }
+
+  th, td {
+    padding: 6px; 
+    text-align: center;
+  }
+
+  thead {
+    font-size: 12px; 
+  }
+}

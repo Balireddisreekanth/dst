@@ -1,0 +1,137 @@
+/* General Body Styles */
+
+
+/* Container for Form */
+.into {
+  width: 100%;
+  /* max-width: 600px; */
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px auto; /* Center container horizontally and adjust top margin */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Spacing for Form Elements */
+form > div {
+  margin-bottom: 15px;
+}
+
+/* Label Styles */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input Styles */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button Styles */
+button[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Button Hover Effect */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles for Large Desktops (1440px and above) */
+@media (min-width: 1440px) {
+  .into {
+      width: 80%;  /* Adjusted width for large screens */
+      padding: 20px;
+      margin-left: 320PX;
+      margin-top: 40px; /* Adjust margin for large screens */
+  }
+}
+
+/* Responsive Styles for Desktops (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .into {
+      width: 90%; /* Adjusted width for medium-large screens */
+      padding: 20px;
+      margin-left: 320px;
+      margin-top: 30px; /* Adjust margin for medium-large screens */
+  }
+}
+
+/* Responsive Styles for Tablets (768px to 1023px) */
+@media (max-width: 1024px) {
+  .into {
+    
+      padding: 15px;
+      margin-top: 20px; /* Adjust margin for tablets */
+  }
+
+  label {
+      font-size: 14px;
+  }
+
+  input[type="text"],
+  button[type="submit"] {
+      font-size: 14px;
+  }
+}
+
+/* Responsive Styles for Small Tablets and Mobile Screens (425px to 767px) */
+@media (max-width: 768px) {
+  .into {
+      width: 98%; /* Adjusted width for small tablets and large phones */
+      padding: 10px;
+     margin-left: -40px;
+      margin-right: 270px;
+      margin-top: 15px; /* Adjust margin for small tablets and large phones */
+  }
+
+  label {
+      font-size: 12px;
+  }
+
+  input[type="text"],
+  button[type="submit"] {
+      font-size: 12px;
+      padding: 8px;
+  }
+}
+
+
+/* Responsive Styles for Mobile Screens (425px and below) */
+@media (max-width: 425px) {
+  .into {
+      width: 100%; 
+      padding: 10px;
+      margin-left: -30PX;
+      margin-right: 40px;
+      margin-top: 15px; /* Adjust margin for very small screens */
+  }
+
+  label {
+      font-size: 12px;
+  }
+
+  input[type="text"],
+  button[type="submit"] {
+      font-size: 12px;
+      padding: 6px;
+  }
+}

@@ -1,0 +1,128 @@
+/* src/components/Sidebar.css */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .click{
+    margin-top: 330px;
+  }
+  
+  .sidebar nav ul li a,
+  .sidebar nav ul li button {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+   
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .sidebar nav ul li a.active-link,
+  .sidebar nav ul li a:hover,
+  .sidebar nav ul li button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 22%;
+      height: auto;
+      position: relative;
+    }
+  
+    .sidebar nav ul {
+      display: flex;
+      font-size: 14px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sidebar nav ul li {
+      width: 100%;
+    }
+  }
+  
+  /* src/components/AdminDashboard.css */
+  
+  .admin-dashboard {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .add-question,
+  .questions-list {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .add-question input {
+    padding: 10px;
+    margin-right: 10px;
+    width: calc(100% - 140px);
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+  
+  .add-question button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .questions-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .questions-list li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 30;
+    }
+  }
+  
